@@ -241,9 +241,28 @@ Download videos online quickly with a simple and user-friendly interface.
 Paste your video link below and start downloading in seconds.
 </p>
 
-<div class="download-box">
-<input type="text" placeholder="Paste Video URL Here">
-<button>Download Now</button>
+<div class="download-box" style="display:block;background:none;">
+
+<video width="100%" controls style="max-width:700px;border-radius:15px;">
+  <source src="videos/video1.mp4" type="video/mp4">
+  Your browser does not support video.
+</video>
+
+<br><br>
+
+<a href="videos/video1.mp4" download
+style="
+background:linear-gradient(135deg,#2563eb,#9333ea);
+color:white;
+padding:15px 30px;
+border-radius:10px;
+text-decoration:none;
+display:inline-block;
+font-weight:600;
+">
+Download Video
+</a>
+
 </div>
 
 </div>
