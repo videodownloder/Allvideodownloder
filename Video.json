@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Welcome Video",
+    "file": "intro.mp4",
+    "thumbnail": "/thumbs/intro.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Sample Reel",
+    "file": "reel1.mp4",
+    "thumbnail": "/thumbs/reel1.jpg"
+  }
+]
