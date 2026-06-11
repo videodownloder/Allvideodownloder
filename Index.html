@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Video Downloader - Download Videos Online</title>
+
+<meta name="description" content="Fast and easy video downloader. Download videos online with a simple and user-friendly interface.">
+
+<meta name="keywords" content="video downloader, online video downloader, hd video downloader, free video downloader, download videos online">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+}
+
+header{
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.2);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:50px 20px;
+background:
+radial-gradient(circle at top left,#2563eb 0%,transparent 35%),
+radial-gradient(circle at bottom right,#9333ea 0%,transparent 35%),
+#0f172a;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero span{
+background:linear-gradient(90deg,#60a5fa,#c084fc);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+color:#cbd5e1;
+font-size:18px;
+margin-bottom:30px;
+}
+
+.download-box{
+display:flex;
+background:#fff;
+padding:10px;
+border-radius:15px;
+max-width:700px;
+margin:auto;
+}
+
+.download-box input{
+flex:1;
+border:none;
+outline:none;
+padding:18px;
+font-size:16px;
+}
+
+.download-box button{
+border:none;
+padding:18px 30px;
+background:linear-gradient(135deg,#2563eb,#9333ea);
+color:white;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+}
+
+section{
+padding:80px 8%;
+}
+
+h2{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:18px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+color:#cbd5e1;
+}
+
+.steps{
+max-width:900px;
+margin:auto;
+}
+
+.step{
+background:#1e293b;
+padding:20px;
+margin-bottom:15px;
+border-radius:15px;
+}
+
+.blog{
+max-width:1000px;
+margin:auto;
+}
+
+.blog article{
+background:#1e293b;
+padding:25px;
+margin-bottom:20px;
+border-radius:15px;
+}
+
+.blog h3{
+margin-bottom:10px;
+}
+
+.blog p{
+color:#cbd5e1;
+line-height:1.8;
+}
+
+.faq{
+max-width:900px;
+margin:auto;
+}
+
+.faq-item{
+background:#1e293b;
+padding:20px;
+margin-bottom:15px;
+border-radius:15px;
+}
+
+.faq-item h3{
+margin-bottom:10px;
+}
+
+.faq-item p{
+color:#cbd5e1;
+}
+
+footer{
+padding:30px;
+text-align:center;
+color:#94a3b8;
+border-top:1px solid rgba(255,255,255,.1);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.download-box{
+flex-direction:column;
+gap:10px;
+}
+
+.download-box button{
+width:100%;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Video Downloader</div>
+<nav>
+<a href="#features">Features</a>
+<a href="#how">How To Use</a>
+<a href="#blog">Blog</a>
+<a href="#faq">FAQ</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Fast <span>Video Downloader</span></h1>
+
+<p>
+Download videos online quickly with a simple and user-friendly interface.
+Paste your video link below and start downloading in seconds.
+</p>
+
+<div class="download-box">
+<input type="text" placeholder="Paste Video URL Here">
+<button>Download Now</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<h2>Why Use Our Video Downloader?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>⚡ Fast Downloads</h3>
+<p>Download videos quickly with optimized speed.</p>
+</div>
+
+<div class="card">
+<h3>📱 Mobile Friendly</h3>
+<p>Works perfectly on Android, iPhone and tablets.</p>
+</div>
+
+<div class="card">
+<h3>🎬 HD Quality</h3>
+<p>Save videos in high quality whenever available.</p>
+</div>
+
+<div class="card">
+<h3>🔒 Secure</h3>
+<p>Your video links remain private and protected.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="how">
+
+<h2>How To Download Videos</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>Step 1</h3>
+<p>Copy the video URL you want to download.</p>
+</div>
+
+<div class="step">
+<h3>Step 2</h3>
+<p>Paste the URL into the download box.</p>
+</div>
+
+<div class="step">
+<h3>Step 3</h3>
+<p>Click the Download button.</p>
+</div>
+
+<div class="step">
+<h3>Step 4</h3>
+<p>Select your preferred quality and save the file.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="blog">
+
+<h2>Latest Blog</h2>
+
+<div class="blog">
+
+<article>
+<h3>How to Download Videos Online Easily</h3>
+<p>
+A modern video downloader allows users to save videos quickly for offline viewing.
+Simply paste the video URL, click download, and choose your preferred format.
+</p>
+</article>
+
+<article>
+<h3>Benefits of Using a Video Downloader</h3>
+<p>
+Video download tools help users watch content without internet access,
+save mobile data, and enjoy content anytime.
+</p>
+</article>
+
+<article>
+<h3>Best Ways to Save Videos in High Quality</h3>
+<p>
+Choose HD quality whenever available and ensure enough storage space
+on your device for the best viewing experience.
+</p>
+</article>
+
+</div>
+
+</section>
+
+<section id="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq">
+
+<div class="faq-item">
+<h3>How do I download a video?</h3>
+<p>
+Copy the video link, paste it into the downloader, click download,
+and save the video to your device.
+</p>
+</div>
+
+<div class="faq-item">
+<h3>Is this video downloader free?</h3>
+<p>
+Yes, the downloader can be used directly through your browser.
+</p>
+</div>
+
+<div class="faq-item">
+<h3>Can I use it on mobile?</h3>
+<p>
+Yes, it works on Android phones, iPhones, tablets and desktop devices.
+</p>
+</div>
+
+<div class="faq-item">
+<h3>Do I need to install software?</h3>
+<p>
+No installation is required. Everything works online.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Video Downloader. All Rights Reserved.
+</footer>
+
+</body>
+</html>
