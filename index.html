@@ -3,86 +3,432 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Video Downloader - Download Videos Online</title>
+
+<!-- --- MAXIMUM SEO KEYWORD DENSITY METAS --- -->
+<title>AllVideo Downloader - Free Instagram Reels, YouTube Shorts, TikTok No Watermark, Twitter X HD Video Downloader Online</title>
+<meta name="description" content="Best 100% free online video downloader tool to download Instagram reels, YouTube shorts, TikTok videos without watermark, Facebook video download, Twitter X HD clips, Pinterest mp4, and LinkedIn videos safely in 1-click.">
+<meta name="keywords" content="free instagram reels downloader, download tiktok videos without watermark, youtube shorts downloader online, twitter hd video downloader, free online video downloader tool, facebook video download tool, save videos offline 2026, ig story saver, instagram video download hd, tiktok mp4 converter, download yt shorts free, save from net alternative, 9xbuddy mirror, snaptik online, instadp viewer, fb video downloader online, twitter x video saver, pinterest video downloader, linkedin mp4 extractor, reddit video download audio, online media scraper, thread video downloader, snapchat spotlight saver, twitch clip downloader, download private videos online">
+
 <link href="https://googleapis.com" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
-body{background:#0f172a;color:#fff;}
-header{padding:20px 8%;display:flex;justify-content:space-between;align-items:center;background:rgba(0,0,0,.2);backdrop-filter:blur(10px);position:sticky;top:0;z-index:100;}
-.logo{font-size:24px;font-weight:700;}
-nav a{color:white;text-decoration:none;margin-left:20px;}
-.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:50px 20px;background:radial-gradient(circle at top left,#2563eb 0%,transparent 35%),radial-gradient(circle at bottom right,#9333ea 0%,transparent 35%),#0f172a;}
-.hero-content{max-width:900px;width: 100%;}
-.hero h1{font-size:60px;margin-bottom:20px;}
-.hero span{background:linear-gradient(90deg,#60a5fa,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-.hero p{color:#cbd5e1;font-size:18px;margin-bottom:30px;}
-.download-box{display:flex;background:#fff;padding:10px;border-radius:15px;max-width:700px;margin:auto;box-shadow: 0 10px 25px rgba(0,0,0,0.3);}
-.download-box input{flex:1;border:none;outline:none;padding:18px;font-size:16px;color: #000;background: transparent;}
-.download-box button{border:none;padding:18px 30px;background:linear-gradient(135deg,#2563eb,#9333ea);color:white;border-radius:10px;cursor:pointer;font-weight:600;}
-#note-text {color:#94a3b8; font-size:14px; margin-top:15px;}
-section{padding:80px 8%;}
-h2{text-align:center;font-size:40px;margin-bottom:50px;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
-.card{background:#1e293b;padding:25px;border-radius:18px;}
-.card h3{margin-bottom:10px;}
-.card p{color:#cbd5e1;}
-footer{padding:30px;text-align:center;color:#94a3b8;border-top:1px solid rgba(255,255,255,.1);}
-@media(max-width:768px){.hero h1{font-size:38px;}.download-box{flex-direction:column;gap:10px;}.download-box button{width:100%;}}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+}
+
+header{
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(15, 23, 42, 0.8);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:100;
+border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+background: linear-gradient(90deg, #38bdf8, #ec4899);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+nav a{
+color:#cbd5e1;
+text-decoration:none;
+margin-left:25px;
+font-size: 15px;
+transition: 0.3s;
+}
+
+nav a:hover{
+color: #ec4899;
+}
+
+.hero{
+min-height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:60px 20px;
+background:
+radial-gradient(circle at top left,rgba(37, 99, 235, 0.2) 0%,transparent 40%),
+radial-gradient(circle at bottom right,rgba(236, 72, 153, 0.15) 0%,transparent 40%),
+#0f172a;
+}
+
+.hero-content{
+max-width:850px;
+width: 100%;
+}
+
+.status-badge {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+background: rgba(16, 185, 129, 0.1);
+color: #34d399;
+padding: 6px 16px;
+border-radius: 20px;
+font-size: 13px;
+font-weight: 500;
+margin-bottom: 20px;
+border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.status-dot {
+width: 8px;
+height: 8px;
+background: #10b981;
+border-radius: 50%;
+animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+0% { transform: scale(0.9); opacity: 0.6; }
+50% { transform: scale(1.1); opacity: 1; }
+100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:20px;
+font-weight: 700;
+line-height: 1.2;
+}
+
+.hero span{
+background:linear-gradient(90deg,#60a5fa,#f472b6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+color:#cbd5e1;
+font-size:18px;
+margin-bottom:35px;
+}
+
+.download-box{
+display:flex;
+background:#fff;
+padding:8px;
+border-radius:16px;
+max-width:700px;
+margin:auto;
+box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.download-box input{
+flex:1;
+border:none;
+outline:none;
+padding:16px;
+font-size:16px;
+color: #0f172a;
+background: transparent;
+}
+
+.download-box button{
+border:none;
+padding:16px 35px;
+background:linear-gradient(135deg,#2563eb,#db2777);
+color:white;
+border-radius:12px;
+cursor:pointer;
+font-weight:600;
+box-shadow: 0 4px 12px rgba(219, 39, 119, 0.3);
+transition: 0.3s ease;
+}
+
+.download-box button:hover {
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(219, 39, 119, 0.5);
+}
+
+.platforms-preview {
+margin-top: 30px;
+display: flex;
+justify-content: center;
+gap: 15px;
+flex-wrap: wrap;
+color: #94a3b8;
+font-size: 14px;
+}
+
+.platform-tag {
+background: rgba(30, 41, 59, 0.7);
+padding: 5px 12px;
+border-radius: 8px;
+border: 1px solid rgba(255,255,255,0.05);
+}
+
+section{
+padding:80px 8%;
+}
+
+h2{
+text-align:center;
+font-size:36px;
+margin-bottom:45px;
+font-weight: 700;
+}
+
+h2 span {
+background: linear-gradient(90deg, #60a5fa, #f472b6);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.about-container {
+max-width: 950px;
+margin: auto;
+background: linear-gradient(145deg, #1e293b, #0f172a);
+padding: 40px;
+border-radius: 24px;
+border: 1px solid rgba(255,255,255,0.05);
+display: flex;
+align-items: center;
+gap: 40px;
+box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.about-avatar {
+width: 100px;
+height: 100px;
+background: linear-gradient(135deg, #a78bfa, #f472b6);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 45px;
+box-shadow: 0 8px 25px rgba(244, 114, 182, 0.3);
+flex-shrink: 0;
+}
+
+.about-text h3 {
+font-size: 24px;
+margin-bottom: 12px;
+color: #f472b6;
+}
+
+.about-text p {
+color: #cbd5e1;
+line-height: 1.7;
+font-size: 16px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:18px;
+transition: 0.3s;
+border: 1px solid rgba(255,255,255,0.02);
+}
+
+.card:hover {
+transform: translateY(-5px);
+border-color: rgba(244, 114, 182, 0.2);
+}
+
+.card h3{
+margin-bottom:12px;
+font-size: 20px;
+}
+
+.card p{
+color:#cbd5e1;
+font-size: 15px;
+}
+
+/* --- NEW HIGH DENSITY KEYWORD INDEX SYSTEM --- */
+.seo-keyword-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 15px;
+max-width: 1100px;
+margin: auto;
+}
+.seo-tag-box {
+background: #1e293b;
+padding: 15px;
+border-radius: 10px;
+font-size: 13px;
+color: #94a3b8;
+border-left: 3px solid #ec4899;
+}
+.seo-tag-box b {
+color: #fff;
+display: block;
+margin-bottom: 4px;
+}
+
+.blog-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+max-width: 1100px;
+margin: auto;
+}
+
+.blog-card {
+background: #1e293b;
+border-radius: 16px;
+overflow: hidden;
+border: 1px solid rgba(255,255,255,0.03);
+transition: 0.3s;
+}
+
+.blog-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.blog-badge {
+background: rgba(96, 165, 250, 0.1);
+color: #60a5fa;
+padding: 4px 10px;
+border-radius: 6px;
+font-size: 12px;
+font-weight: 600;
+display: inline-block;
+margin-bottom: 15px;
+}
+
+.blog-content {
+padding: 25px;
+}
+
+.blog-content h3 {
+font-size: 20px;
+margin-bottom: 10px;
+line-height: 1.4;
+}
+
+.blog-content p {
+color: #cbd5e1;
+font-size: 14px;
+line-height: 1.6;
+}
+
+.contact-container {
+max-width: 650px;
+margin: auto;
+text-align: center;
+background: #1e293b;
+padding: 40px;
+border-radius: 20px;
+border: 1px solid rgba(255,255,255,0.05);
+}
+
+.contact-info-grid {
+display: flex;
+flex-direction: column;
+gap: 15px;
+margin-top: 25px;
+}
+
+.contact-item {
+background: rgba(15, 23, 42, 0.5);
+padding: 15px;
+border-radius: 12px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 1px solid rgba(255,255,255,0.02);
+}
+
+.contact-item span {
+font-weight: 600;
+color: #94a3b8;
+}
+
+.contact-item a, .contact-item p {
+color: #f472b6;
+text-decoration: none;
+font-weight: 500;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#94a3b8;
+font-size: 14px;
+border-top:1px solid rgba(255,255,255,.05);
+background: #090d16;
+}
+
+@media(max-width:768px){
+.hero h1{ font-size:34px; }
+.download-box{ flex-direction:column; gap:10px; }
+.download-box button{ width:100%; }
+.about-container { flex-direction: column; text-align: center; padding: 25px; }
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<div class="logo">Video Downloader</div>
+<div class="logo">AllVideo Downloader</div>
 <nav>
 <a href="#features">Features</a>
+<a href="#keywords">Supported Hubs</a>
+<a href="#about">About Me</a>
+<a href="#blog">Blogs</a>
 </nav>
 </header>
 
 <section class="hero">
 <div class="hero-content">
-<h1>Fast <span>Video Downloader</span></h1>
-<p>Download videos online quickly with a simple and user-friendly interface.</p>
+<div class="status-badge"><div class="status-dot"></div> Server Status: Online & Fast</div>
+<h1>Universal Free <span>Video Downloader</span></h1>
+<p>
+Download high-quality videos online instantly. Easily run an <b>Instagram Reels Downloader</b>, extract via <b>YouTube Shorts Downloader Online</b>, or process <b>TikTok videos without watermark</b>. No sign-ups, no tracking cookies, and 100% ad-free accessibility.
+</p>
 
 <div class="download-box">
-    <input type="text" id="videoLink" placeholder="Paste YouTube, Instagram, or TikTok link here...">
+    <input type="text" id="videoLink" placeholder="Paste Instagram reels, YouTube shorts, TikTok mp4, Twitter X link here...">
     <button onclick="redirectToDownload()">Download</button>
 </div>
-<p id="note-text">🔒 Safe & High-Speed Mirror Routing</p>
 
+<div class="platforms-preview">
+    <span>Popular Ensembles:</span>
+    <span class="platform-tag">Instagram Reels Saver</span>
+    <span class="platform-tag">TikTok No Watermark HD</span>
+    <span class="platform-tag">YouTube Shorts Downloader</span>
+    <span class="platform-tag">Facebook HD Downloader</span>
+    <span class="platform-tag">Twitter X Video Extractor</span>
+</div>
 </div>
 </section>
 
-<section id="features">
-<h2>Why Use Our Video Downloader?</h2>
-<div class="grid">
-<div class="card"><h3>⚡ Fast Downloads</h3><p>Download videos quickly with optimized speed.</p></div>
-<div class="card"><h3>📱 Mobile Friendly</h3><p>Works perfectly on Android, iPhone and tablets.</p></div>
-<div class="card"><h3>🎬 HD Quality</h3><p>Save videos in high quality whenever available.</p></div>
-</div>
-</section>
-
-<footer>© 2026 Video Downloader. All Rights Reserved.</footer>
-
-<script>
-function redirectToDownload() {
-    const inputUrl = document.getElementById('videoLink').value.trim();
-    if (!inputUrl) {
-        alert("Please paste a valid video URL first!");
-        return;
-    }
-    
-    // Yeh script link format check karke automatic stable parsing server par redirect karegi
-    if (inputUrl.includes("youtube.com") || inputUrl.includes("youtu.be")) {
-        // YouTube links ko high speed savefrom engine par redirect karega
-        const cleanUrl = inputUrl.replace("https://www.", "").replace("https://", "");
-        window.open("https://ss" + cleanUrl, "_blank");
-    } else {
-        // Baki links (Instagram, TikTok) ko universal cloud downloader engine par bhejega
-        window.open("https://9xbuddy.xyz" + encodeURIComponent(inputUrl), "_blank");
-    }
-}
-</script>
-
-</body>
-</html>
+<!-- --- NEW HIGH VOLUME SEO KEYWORDS SEARCH MAP INDEX --- -->
+<section id="keywords" style="background: #090d16; padding-top:60px; padding-bottom:60px;">
+    <h2>Supported <span>Platforms & Keywords Index</span></h2>
+    <div class="seo-keyword-grid">
+        <div class="seo-tag-box"><b>Instagram Service</b>Free Instagram reels downloader online, download IGTV videos, save Instagram story clips, high-definition insta media converter scripts.</div>
+        <div class="seo-tag-box"><b>TikTok Service</b>Download TikTok videos without watermark online, clear TikTok mp4 files saver, high quality fast TikTok video extractor hub.</div>
+        <div class="seo-tag-box"><b>YouTube Channels</b>Free YouTube shorts downloader online, save full fast YT video clips, online YouTube MP4 file stream fetcher tool.</div>
+        <div class="seo-tag-box"><b>Twitter X Service</b>Twitter HD video downloader portal, save X web videos instantly, free online Twitter mp4 video saver utility download.</div>
