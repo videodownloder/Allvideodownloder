@@ -3,274 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Video Downloader - Download Videos Online</title>
-
-<meta name="description" content="Fast and easy video downloader. Download videos online with a simple and user-friendly interface.">
-<meta name="keywords" content="video downloader, online video downloader, hd video downloader, free video downloader, download videos online">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<link href="https://googleapis.com" rel="stylesheet">
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0f172a;
-color:#fff;
-}
-
-header{
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,.2);
-backdrop-filter:blur(10px);
-position:sticky;
-top:0;
-z-index:100;
-}
-
-.logo{
-font-size:24px;
-font-weight:700;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-.hero{
-min-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:50px 20px;
-background:
-radial-gradient(circle at top left,#2563eb 0%,transparent 35%),
-radial-gradient(circle at bottom right,#9333ea 0%,transparent 35%),
-#0f172a;
-}
-
-.hero-content{
-max-width:900px;
-width: 100%;
-}
-
-.hero h1{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.hero span{
-background:linear-gradient(90deg,#60a5fa,#c084fc);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-.hero p{
-color:#cbd5e1;
-font-size:18px;
-margin-bottom:30px;
-}
-
-/* --- DOWNLOAD BOX DUBARA ADD KIYA --- */
-.download-box{
-display:flex;
-background:#fff;
-padding:10px;
-border-radius:15px;
-max-width:700px;
-margin:auto;
-box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-.download-box input{
-flex:1;
-border:none;
-outline:none;
-padding:18px;
-font-size:16px;
-color: #000;
-background: transparent;
-}
-
-.download-box button{
-border:none;
-padding:18px 30px;
-background:linear-gradient(135deg,#2563eb,#9333ea);
-color:white;
-border-radius:10px;
-cursor:pointer;
-font-weight:600;
-transition: 0.3s;
-}
-
-.download-box button:hover {
-opacity: 0.9;
-}
-
-/* --- RESULT DIALOG STYLE --- */
-#downloadResult {
-max-width: 700px;
-margin: 20px auto 0 auto;
-font-size: 16px;
-}
-
-.dl-btn {
-display: inline-block;
-padding: 15px 30px;
-background: linear-gradient(135deg, #10b981, #059669);
-color: white;
-text-decoration: none;
-border-radius: 10px;
-font-weight: 600;
-margin-top: 15px;
-box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
-}
-
-section{
-padding:80px 8%;
-}
-
-h2{
-text-align:center;
-font-size:40px;
-margin-bottom:50px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:18px;
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-.card p{
-color:#cbd5e1;
-}
-
-.steps{
-max-width:900px;
-margin:auto;
-}
-
-.step{
-background:#1e293b;
-padding:20px;
-margin-bottom:15px;
-border-radius:15px;
-}
-
-.blog{
-max-width:1000px;
-margin:auto;
-}
-
-.blog article{
-background:#1e293b;
-padding:25px;
-margin-bottom:20px;
-border-radius:15px;
-}
-
-.blog h3{
-margin-bottom:10px;
-}
-
-.blog p{
-color:#cbd5e1;
-line-height:1.8;
-}
-
-.faq{
-max-width:900px;
-margin:auto;
-}
-
-.faq-item{
-background:#1e293b;
-padding:20px;
-margin-bottom:15px;
-border-radius:15px;
-}
-
-.faq-item h3{
-margin-bottom:10px;
-}
-
-.faq-item p{
-color:#cbd5e1;
-}
-
-footer{
-padding:30px;
-text-align:center;
-color:#94a3b8;
-border-top:1px solid rgba(255,255,255,.1);
-}
-
-@media(max-width:768px){
-.hero h1{
-font-size:38px;
-}
-.download-box{
-flex-direction:column;
-gap:10px;
-}
-.download-box button{
-width:100%;
-}
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+body{background:#0f172a;color:#fff;}
+header{padding:20px 8%;display:flex;justify-content:space-between;align-items:center;background:rgba(0,0,0,.2);backdrop-filter:blur(10px);position:sticky;top:0;z-index:100;}
+.logo{font-size:24px;font-weight:700;}
+nav a{color:white;text-decoration:none;margin-left:20px;}
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:50px 20px;background:radial-gradient(circle at top left,#2563eb 0%,transparent 35%),radial-gradient(circle at bottom right,#9333ea 0%,transparent 35%),#0f172a;}
+.hero-content{max-width:900px;width: 100%;}
+.hero h1{font-size:60px;margin-bottom:20px;}
+.hero span{background:linear-gradient(90deg,#60a5fa,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero p{color:#cbd5e1;font-size:18px;margin-bottom:30px;}
+.download-box{display:flex;background:#fff;padding:10px;border-radius:15px;max-width:700px;margin:auto;box-shadow: 0 10px 25px rgba(0,0,0,0.3);}
+.download-box input{flex:1;border:none;outline:none;padding:18px;font-size:16px;color: #000;background: transparent;}
+.download-box button{border:none;padding:18px 30px;background:linear-gradient(135deg,#2563eb,#9333ea);color:white;border-radius:10px;cursor:pointer;font-weight:600;}
+#note-text {color:#94a3b8; font-size:14px; margin-top:15px;}
+section{padding:80px 8%;}
+h2{text-align:center;font-size:40px;margin-bottom:50px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+.card{background:#1e293b;padding:25px;border-radius:18px;}
+.card h3{margin-bottom:10px;}
+.card p{color:#cbd5e1;}
+footer{padding:30px;text-align:center;color:#94a3b8;border-top:1px solid rgba(255,255,255,.1);}
+@media(max-width:768px){.hero h1{font-size:38px;}.download-box{flex-direction:column;gap:10px;}.download-box button{width:100%;}}
 </style>
 </head>
-
 <body>
 
 <header>
 <div class="logo">Video Downloader</div>
 <nav>
 <a href="#features">Features</a>
-<a href="#how">How To Use</a>
-<a href="#blog">Blog</a>
-<a href="#faq">FAQ</a>
 </nav>
 </header>
 
 <section class="hero">
 <div class="hero-content">
 <h1>Fast <span>Video Downloader</span></h1>
-<p>
-Download videos online quickly with a simple and user-friendly interface.
-Paste your video link below and start downloading in seconds.
-</p>
+<p>Download videos online quickly with a simple and user-friendly interface.</p>
 
-<!-- --- PURANA DUMMY VIDEO HATA KAR INPUT BOX WAPAS LAGAYA --- -->
 <div class="download-box">
     <input type="text" id="videoLink" placeholder="Paste YouTube, Instagram, or TikTok link here...">
-    <button onclick="fetchVideo()">Download</button>
+    <button onclick="redirectToDownload()">Download</button>
 </div>
-
-<!-- --- DOWNLOAD LINK SHOW KARNE KE LIYE DIV BLOCK --- -->
-<div id="downloadResult"></div>
+<p id="note-text">🔒 Safe & High-Speed Mirror Routing</p>
 
 </div>
 </section>
@@ -278,171 +56,33 @@ Paste your video link below and start downloading in seconds.
 <section id="features">
 <h2>Why Use Our Video Downloader?</h2>
 <div class="grid">
-<div class="card">
-<h3>⚡ Fast Downloads</h3>
-<p>Download videos quickly with optimized speed.</p>
-</div>
-<div class="card">
-<h3>📱 Mobile Friendly</h3>
-<p>Works perfectly on Android, iPhone and tablets.</p>
-</div>
-<div class="card">
-<h3>🎬 HD Quality</h3>
-<p>Save videos in high quality whenever available.</p>
-</div>
-<div class="card">
-<h3>🔒 Secure</h3>
-<p>Your video links remain private and protected.</p>
-</div>
+<div class="card"><h3>⚡ Fast Downloads</h3><p>Download videos quickly with optimized speed.</p></div>
+<div class="card"><h3>📱 Mobile Friendly</h3><p>Works perfectly on Android, iPhone and tablets.</p></div>
+<div class="card"><h3>🎬 HD Quality</h3><p>Save videos in high quality whenever available.</p></div>
 </div>
 </section>
 
-<section id="how">
-<h2>How To Download Videos</h2>
-<div class="steps">
-<div class="step">
-<h3>Step 1</h3>
-<p>Copy the video URL you want to download.</p>
-</div>
-<div class="step">
-<h3>Step 2</h3>
-<p>Paste the URL into the download box.</p>
-</div>
-<div class="step">
-<h3>Step 3</h3>
-<p>Click the Download button.</p>
-</div>
-<div class="step">
-<h3>Step 4</h3>
-<p>Select your preferred quality and save the file.</p>
-</div>
-</div>
-</section>
+<footer>© 2026 Video Downloader. All Rights Reserved.</footer>
 
-<section id="blog">
-<h2>Latest Blog</h2>
-<div class="blog">
-<article>
-<h3>How to Download Videos Online Easily</h3>
-<p>
-A modern video downloader allows users to save videos quickly for offline viewing.
-Simply paste the video URL, click download, and choose your preferred format.
-</p>
-</article>
-<article>
-<h3>Benefits of Using a Video Downloader</h3>
-<p>
-Video download tools help users watch content without internet access,
-save mobile data, and enjoy content anytime.
-</p>
-</article>
-<article>
-<h3>Best Ways to Save Videos in High Quality</h3>
-<p>
-Choose HD quality whenever available and ensure enough storage space
-on your device for the best viewing experience.
-</p>
-</article>
-</div>
-</section>
-
-<section id="faq">
-<h2>Frequently Asked Questions</h2>
-<div class="faq">
-<div class="faq-item">
-<h3>How do I download a video?</h3>
-<p>
-Copy the video link, paste it into the downloader, click download,
-and save the video to your device.
-</p>
-</div>
-<div class="faq-item">
-<h3>Is this video downloader free?</h3>
-<p>
-Yes, the downloader can be used directly through your browser.
-</p>
-</div>
-<div class="faq-item">
-<h3>Can I use it on mobile?</h3>
-<p>
-Yes, it works on Android phones, iPhones, tablets and desktop devices.
-</p>
-</div>
-<div class="faq-item">
-<h3>Do I need to install software?</h3>
-<p>
-No installation is required. Everything works online.
-</p>
-</div>
-</div>
-</section>
-
-<footer>
-© 2026 Video Downloader. All Rights Reserved.
-</footer>
-
-<!-- --- UPDATE KIYA GAYA JAVASCRIPT WORKING CODE --- -->
 <script>
-async function fetchVideo() {
+function redirectToDownload() {
     const inputUrl = document.getElementById('videoLink').value.trim();
-    const resultDiv = document.getElementById('downloadResult');
-
     if (!inputUrl) {
         alert("Please paste a valid video URL first!");
         return;
     }
-
-    resultDiv.innerHTML = "<p style='color:#60a5fa; margin-top:15px;'>⏳ Extracting download link... Please wait 5-10 seconds.</p>";
-
-    try {
-        // CORS bypass karne ke liye public allorigins proxy aur alternative safe endpoint ka use kiya hai
-        const targetUrl = 'https://cobalt.tools';
-        const proxyUrl = 'https://allorigins.win' + encodeURIComponent(targetUrl);
-
-        const response = await fetch('https://cobalt.tools', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ 
-                url: inputUrl,
-                vQuality: '720', // Default Standard HD quality
-                isAudioOnly: false
-            })
-        });
-
-        // Agar direct API fail ho toh user ko alternative msg milega
-        if (!response.ok) {
-            throw new Error("API Limit reached or request blocked by browser security.");
-        }
-
-        const data = await response.json();
-
-        if (data.url) {
-            // Agar link successfully mil jata hai
-            resultDiv.innerHTML = `
-                <div style="background:#1e293b; padding:15px; border-radius:10px; margin-top:15px; border:1px solid #10b981;">
-                    <p style="color:#10b981; font-weight:600; margin-bottom:10px;">✅ Video Link Found Successfully!</p>
-                    <a href="${data.url}" target="_blank" class="dl-btn" download>⬇ Download Video Now</a>
-                </div>`;
-        } else if (data.text) {
-            resultDiv.innerHTML = `<p style="color:#ef4444; margin-top:15px;">❌ Server Reply: ${data.text}</p>`;
-        } else {
-            resultDiv.innerHTML = "<p style="color:#ef4444; margin-top:15px;">❌ Could not extract file. Try changing the link format or another video.</p>";
-        }
-    } catch (error) {
-        console.error(error);
-        // Backup UI agar API down ho toh user ko custom alert dikhane ke liye
-        resultDiv.innerHTML = `
-            <div style="background:#2d1a1a; padding:15px; border-radius:10px; margin-top:15px; border:1px solid #ef4444;">
-                <p style="color:#ef4444; font-weight:600;">❌ Connection Blocked or API Down</p>
-                <p style="font-size:14px; color:#cbd5e1; margin-top:5px;">Public API limit temporarily reach ho chuki hai. Isko permanently 100% chalane ke liye aapko **RapidAPI** ki free key lagani hogi ya apna **Render Server** setup karna hoga.</p>
-            </div>`;
+    
+    // Yeh script link format check karke automatic stable parsing server par redirect karegi
+    if (inputUrl.includes("youtube.com") || inputUrl.includes("youtu.be")) {
+        // YouTube links ko high speed savefrom engine par redirect karega
+        const cleanUrl = inputUrl.replace("https://www.", "").replace("https://", "");
+        window.open("https://ss" + cleanUrl, "_blank");
+    } else {
+        // Baki links (Instagram, TikTok) ko universal cloud downloader engine par bhejega
+        window.open("https://9xbuddy.xyz" + encodeURIComponent(inputUrl), "_blank");
     }
 }
 </script>
-
 
 </body>
 </html>
